@@ -12,8 +12,8 @@ import (
 var (
 	tag        = flag.String("t", "", "Tag to look for. Will return whole file by default.")
 	closingTag = flag.String("c", "", "Closing tag to match on. This only needs to be specified if it is not the companion tag to -t")
-	file       = flag.String("f", "sample_text.txt", "Which file to scan. Scans stdin if no file provided (enables piping to this utility)")
-	out        = flag.String("o", "somefile.out", "Output file. If left blank, will output to stdout")
+	file       = flag.String("f", "", "Which file to scan. Scans stdin if no file provided (enables piping to this utility)")
+	out        = flag.String("o", "", "Output file. If left blank, will output to stdout")
 	help       = flag.Bool("-help", false, "Show usage info")
 	h          = flag.Bool("h", false, "Show usage info")
 )
