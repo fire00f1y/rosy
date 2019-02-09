@@ -4,14 +4,12 @@
 Parse a file and look for xml content desired
 
 ## Usage
+Run the binary with either the `-h` or `--help` flag to pring usage info
 ```bash
---help
-    Show usage info
 -c string
     Closing tag to match on. This only needs to be specified if it is not the companion tag to -t
 -f string
     Which file to scan. Scans stdin if no file provided (enables piping to this utility)
--h    Show usage info
 -o string
     Output file. If left blank, will output to stdout
 -t string
